@@ -115,7 +115,7 @@ def run_ntrip_mavlink_client():
             if mav_msg:
                 print_gps_status(mav_msg)
             
-            # This part remains the same: receive NTRIP data and inject it
+           
             data = ntrip_sock.recv(1024)
             if not data:
                 print("NTRIP: Connection closed by server.")
