@@ -21,16 +21,18 @@ This script is a lightweight software bridge that enables high-precision, real-t
 This allows the vehicle to achieve centimeter-level positional accuracy (an "RTK Fix") using the ground control station's base RTK GPS with Pygpsclient for NTRIP Caster RTCM Streaming and Survey-in, with a dedicated radio telemetry link for the correction data. The script also monitors and displays the vehicle's GPS status in real-time, providing immediate feedback as the fix improves from a standard 3D fix to RTK Float or RTK Fixed.
 
 ## System Design
+<img width="1656" height="857" alt="Screenshot from 2025-08-11 11-25-02" src="https://github.com/user-attachments/assets/6d4d6148-6b57-448e-bf86-b1d2655b7c0a" />
 
-![[Pasted image 20250811112507.png]]
 
 ## Architecture Design
 
-![[Untitled diagram _ Mermaid Chart-2025-08-11-055850.png]]
+<img width="3840" height="717" alt="Untitled diagram _ Mermaid Chart-2025-08-11-055850" src="https://github.com/user-attachments/assets/fe5c392b-4aa3-41fb-967e-a1f938995748" />
+
 
 ## Module Design
 
-![[Untitled diagram _ Mermaid Chart-2025-08-11-053102.png]]
+<img width="1008" height="3842" alt="Untitled diagram _ Mermaid Chart-2025-08-11-053102" src="https://github.com/user-attachments/assets/77b695fa-59fb-4733-84bd-4107d9f8de2d" />
+
 
 # Setup
 
@@ -55,6 +57,7 @@ Before running this script, ensure you have the following:
     pip install pymavlink pyrtcm
     pip install pygpsclient
     ```
+    Reference : https://github.com/semuconsulting/PyGPSClient
 3.  **NTRIP Caster Credentials**: You need access to an NTRIP service, which includes:
     * Host / IP Address
     * Port
